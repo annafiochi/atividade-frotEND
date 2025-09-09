@@ -18,6 +18,7 @@ export default function ApiInfo() {
       }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block p-4 bg-white/20 backdrop-blur-lg rounded-full mb-6">
             <svg
@@ -42,7 +43,9 @@ export default function ApiInfo() {
           </p>
         </div>
 
+        {/* Info Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {/* Nome da API */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
@@ -64,6 +67,8 @@ export default function ApiInfo() {
             </div>
             <p className="text-2xl font-semibold text-yellow-300">Film API</p>
           </div>
+
+          {/* Documentação */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
@@ -105,6 +110,8 @@ export default function ApiInfo() {
               </svg>
             </a>
           </div>
+
+          {/* URL Base */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
@@ -128,6 +135,8 @@ export default function ApiInfo() {
               https://filmapi.vercel.app/api
             </code>
           </div>
+
+          {/* Endpoint */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
@@ -151,6 +160,8 @@ export default function ApiInfo() {
               /films
             </code>
           </div>
+
+          {/* Sobre a API */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300 md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
@@ -184,6 +195,8 @@ export default function ApiInfo() {
             </div>
           </div>
         </div>
+
+        {/* Atributos da Resposta */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">
@@ -211,51 +224,19 @@ export default function ApiInfo() {
           </div>
         </div>
 
+        {/* Operações - Apenas GET */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">
-              📋 Operações CRUD
+              Operação de Consulta
             </h2>
             <p className="text-white/80">
-              Operações disponíveis para manipular os dados de filmes
+              Como consultar os dados de filmes através da API
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-green-500/30 hover:border-green-400/50 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold text-lg">C</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">CREATE</h3>
-                  <p className="text-green-300 font-mono text-sm">
-                    POST /films
-                  </p>
-                </div>
-              </div>
-              <p className="text-white/80 mb-4">
-                Adiciona um novo filme ao banco de dados da API
-              </p>
-              <div className="bg-black/40 rounded-lg p-4 font-mono text-sm">
-                <div className="text-green-400 mb-2">// Exemplo:</div>
-                <div className="text-white">
-                  <span className="text-purple-400">fetch</span>
-                  <span className="text-white">(</span>
-                  <span className="text-yellow-300">'api/films'</span>
-                  <span className="text-white">, {"{}"}</span>
-                </div>
-                <div className="text-white ml-4">
-                  <span className="text-blue-400">method:</span>
-                  <span className="text-yellow-300"> 'POST'</span>,
-                </div>
-                <div className="text-white ml-4">
-                  <span className="text-blue-400">body:</span>
-                  <span className="text-white"> JSON.stringify(novoFilme)</span>
-                </div>
-                <div className="text-white">{"});"}</div>
-              </div>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            {/* READ */}
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-500/30 hover:border-blue-400/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
@@ -282,124 +263,10 @@ export default function ApiInfo() {
                 </div>
               </div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-yellow-500/30 hover:border-yellow-400/50 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold text-lg">U</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">UPDATE</h3>
-                  <p className="text-yellow-300 font-mono text-sm">
-                    PUT /films/:id
-                  </p>
-                </div>
-              </div>
-              <p className="text-white/80 mb-4">
-                Atualiza as informações de um filme existente
-              </p>
-              <div className="bg-black/40 rounded-lg p-4 font-mono text-sm">
-                <div className="text-green-400 mb-2">// Exemplo:</div>
-                <div className="text-white">
-                  <span className="text-purple-400">fetch</span>
-                  <span className="text-white">(</span>
-                  <span className="text-yellow-300">'api/films/1'</span>
-                  <span className="text-white">, {"{}"}</span>
-                </div>
-                <div className="text-white ml-4">
-                  <span className="text-blue-400">method:</span>
-                  <span className="text-yellow-300"> 'PUT'</span>,
-                </div>
-                <div className="text-white ml-4">
-                  <span className="text-blue-400">body:</span>
-                  <span className="text-white">
-                    {" "}
-                    JSON.stringify(dadosAtualizados)
-                  </span>
-                </div>
-                <div className="text-white">{"});"}</div>
-              </div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-red-500/30 hover:border-red-400/50 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold text-lg">D</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">DELETE</h3>
-                  <p className="text-red-300 font-mono text-sm">
-                    DELETE /films/:id
-                  </p>
-                </div>
-              </div>
-              <p className="text-white/80 mb-4">
-                Remove um filme específico do banco de dados
-              </p>
-              <div className="bg-black/40 rounded-lg p-4 font-mono text-sm">
-                <div className="text-green-400 mb-2">// Exemplo:</div>
-                <div className="text-white">
-                  <span className="text-purple-400">fetch</span>
-                  <span className="text-white">(</span>
-                  <span className="text-yellow-300">'api/films/1'</span>
-                  <span className="text-white">, {"{}"}</span>
-                </div>
-                <div className="text-white ml-4">
-                  <span className="text-blue-400">method:</span>
-                  <span className="text-yellow-300"> 'DELETE'</span>
-                </div>
-                <div className="text-white">{"});"}</div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
-            <h4 className="text-xl font-bold text-white mb-4 flex items-center">
-              <svg
-                className="w-6 h-6 mr-2 text-purple-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              O que é CRUD?
-            </h4>
-            <div className="text-white/80 space-y-2">
-              <p>
-                <strong className="text-purple-300">CRUD</strong> é um acrônimo
-                que representa as quatro operações básicas de persistência de
-                dados:
-              </p>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>
-                  <strong className="text-green-300">Create (Criar):</strong>{" "}
-                  Adicionar novos registros
-                </li>
-                <li>
-                  <strong className="text-blue-300">Read (Ler):</strong>{" "}
-                  Consultar registros existentes
-                </li>
-                <li>
-                  <strong className="text-yellow-300">
-                    Update (Atualizar):
-                  </strong>{" "}
-                  Modificar registros existentes
-                </li>
-                <li>
-                  <strong className="text-red-300">Delete (Deletar):</strong>{" "}
-                  Remover registros
-                </li>
-              </ul>
-              <p className="mt-3">
-                Essas operações formam a base de praticamente qualquer sistema
-                de gerenciamento de dados!
-              </p>
-            </div>
           </div>
         </div>
+
+        {/* Exemplo de Requisição */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">
@@ -432,6 +299,8 @@ export default function ApiInfo() {
             </div>
           </div>
         </div>
+
+        {/* Botão Voltar */}
         <div className="text-center">
           <a
             href="/"
