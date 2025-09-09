@@ -19,7 +19,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold">MeuPortfólio</h3>
             </div>
             <p className="text-gray-400 max-w-md">
-              Desenvolvedor apaixonado por tecnologia, sempre em busca de novos desafios 
+              Desenvolvedora apaixonada por tecnologia, sempre em busca de novos desafios 
               e oportunidades para criar soluções inovadoras.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} João Silva Santos. Todos os direitos reservados.
+              © {currentYear} Anna Clara Fiochi. Todos os direitos reservados.
             </p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <span className="text-gray-400 text-sm">Desenvolvido com</span>

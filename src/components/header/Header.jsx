@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -17,11 +18,16 @@ export default function Header() {
               className="invert"
             />
             <h1 className="text-xl font-bold text-white">
-            Home
+              Home
             </h1>
           </div>
           <nav className="hidden md:flex space-x-8">
-        
+            <Link
+              href="/apiinfo"
+              className="text-gray-200 hover:text-white font-medium transition-colors"
+            >
+              Info da API
+            </Link>
             <a
               href="#sobre"
               className="text-gray-200 hover:text-white font-medium transition-colors"
