@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "../components/header/Header";
 import ProjectsSection from "../components/projectsSection/ProjectsSection";
 import Footer from "../components/footer/Footer";
@@ -76,12 +77,18 @@ export default function Home() {
             </div>
             <div className="mt-12">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
+                <Link 
                   href="/projetos"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-lg text-center inline-block"
                 >
                   Ver Projetos
-                </a>
+                </Link>
+                <Link 
+                  href="/filmes"
+                  className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-colors shadow-lg text-center inline-block"
+                >
+                  🎬 Ver Filmes
+                </Link>
                 <button className="border-2 border-violet-300 text-violet-300 dark:text-violet-300 hover:bg-violet-300 hover:text-white font-bold py-3 px-8 rounded-full transition-colors">
                   Entre em Contato
                 </button>
